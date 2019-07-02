@@ -1,0 +1,415 @@
+*,*:after,*:before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+}
+section.header{
+width: 100%;
+    height: 650px;
+    background-color: beige;
+background-image: url(../images/header-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+/*Nav Bar*/
+section.header .nav{
+display: flex;
+    justify-content: space-between;
+    padding-top: 25px
+}
+section.header .nav ul{
+
+display: flex;
+}
+section.header .nav ul li{
+padding-left: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #fff
+}
+section.header .nav ul a {
+    text-decoration: none
+}
+/*End Of Nav Bar*/
+/*Landing Page */
+section.header .landing{
+width: 700px;
+position: absolute;
+    left: 0;
+   top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center
+}
+section.header .landing h2{
+font-size: 55px;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 5%
+}
+section.header .landing p{
+font-size: 18px;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 5%
+}
+section.header .landing button{
+    width: 170px;
+    font-size: 15px;
+    padding: 18px;
+    margin-left: 2%;
+    border: 0;
+    outline: none;
+     border-radius: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+section.header .landing button.first{
+background-color: #fff;
+    color: #000;
+        transition: color 0.5s ease-in-out
+}
+section.header .landing button.first:hover{
+ background:  #8be2e5;
+    color: #fff;
+}
+section.header .landing button.sec{
+   background:  #8be2e5;
+    color: #fff;
+            transition: color 0.5s ease-in-out
+}
+section.header .landing button.sec:hover{
+background-color: #fff;
+    color: #000
+}
+/*End Of Landing Page */
+section.header .mouse{
+    width: 43px;
+    height: 61px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 84px;
+    left: 49%;
+    border-radius: 20px;
+}
+section.header .mouse .scroll{
+ width: 5px;
+    height: 10px;
+    background-color: #fff;
+    margin: auto;
+    animation: scrolling 1s ease-in-out infinite;
+    position: relative
+}
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        top:5px
+    }
+    30% {
+        opacity: 1;
+        top: 10px
+    }
+    100% {
+        opacity: 0;
+        top: 25px
+    }
+}
+/********************************************/
+/*First Section*/
+section.first{
+width: 100%;
+    height: 650px;
+    margin-bottom: 12%;
+    background-image: url(../images/be-the-first-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding-top: 7%
+}
+section.first h2 {
+font-size: 40px;
+    color: #fff;
+    font-weight: bolder;
+}
+section.first p {
+    color: #fff;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+section.first img{
+height: 600px
+}
+/*End First Section*/
+/*****************************************************/
+/*Start Feature Section*/
+section.feature{
+    width: 100%;
+    height:300px;
+
+}
+section.feature .contain-flex{
+    display: flex;
+}
+
+section.feature .contain-flex .parent{
+    margin-left: 2%;
+        width: 30%;
+
+}
+section.feature .parent hr{
+    height: 5px;
+  background: #6d3f96;
+}
+section.feature .parent h2{
+  font-size: 18px;
+    margin-top: 4%;
+    margin-bottom: 2%
+}
+
+section.feature .parent p{
+  font-size: 15px;
+    color:#929496;
+    line-height: 1.4
+}
+section.feature .parent:nth-of-type(1) hr{
+ height: 5px;
+    background: #6d3f96;
+    border: 0
+}
+section.feature .parent:nth-of-type(2) hr{
+ height: 5px;
+ background: #70cbce;
+    border: 0
+}
+section.feature .parent:nth-of-type(3) hr{
+ height: 5px;
+    background: #fdc05d;
+    border: 0
+}
+/*End Feature Section*/
+
+/*****************************************************/
+/*Start Pricing Section*/
+section.price{
+width: 100%;
+    height: auto;
+    background: #70cbce;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 10%;
+}
+section.price h2{
+font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+        padding-bottom: 3%;
+}
+section.price p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 3%;
+}
+section.price .parent{
+width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+section.price .parent .first{
+width: 35%;
+    background-color: #fff;
+       border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section.price .parent .first ul{
+list-style-type: none;
+     border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+            transition:  margin-top 0.5s ease-in-out
+}
+section.price .parent .first ul:hover{
+    margin-top: -10px;
+}
+section.price .parent .first:nth-of-type(1),section.price .parent .first:nth-of-type(3){
+    margin-top: 2%
+}
+section.price .parent .first ul li.personal{
+background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section.price .parent .first ul li.dollar{
+background-color: #000;
+    color: #fff;
+    padding: 20px;
+font-size: 30px;
+    font-weight: bold;
+        transition: all 0.5s ease-in-out
+}
+section.price .parent .first ul:hover li.dollar{
+    background: #333
+}
+section.price .parent .first ul li.dollar span {
+font-weight: normal;
+    color: #ddd
+}
+section.price .parent .first ul li.content p{
+  color: #929496;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+section.price .parent .first ul li.list{
+font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding: 15px;
+    border-bottom: 1px dotted #E8EAEA;
+}
+section.price .parent .first ul button{
+color: #70cbce;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 0;
+    outline: 0;
+    width: 100%;
+background: none;
+        cursor: pointer;
+
+    transition: background 0.5s ease-in-out
+}
+section.price .parent .first ul button:hover{
+    background: #f5f5f5
+}
+/*End Pricing Section*/
+/************************************************/
+/*Start Invite Section*/
+
+section.invite{
+width: 100%;
+    height: 500px;
+    background-color: beige;
+text-align: center;
+    padding-top: 7%;
+}
+section.invite i{
+ padding-bottom: 2.5%;
+    font-size: 30px;
+    border: 2px solid #70cbce;
+    border-radius: 30px;
+        padding: 10px;
+    margin-bottom: 2%;
+}
+section.invite h3{
+    font-size: 40px;
+    font-weight: bold;
+        margin-bottom: 2%;
+
+}
+section.invite p {
+        margin-bottom: 2%;
+
+}
+section.invite input  {
+border: 0;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+        margin-bottom: 2%;
+}
+section.invite input::-webkit-input-placeholder{
+    color: #aaa;
+}
+section.invite button {
+    width: 200px;
+    height: 50px;
+    background: #70cbce;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .5s ease-in-out
+}
+section.invite button:hover{
+background-color: #fff;
+    font-weight: bold;
+    color: #70cbce
+
+}
+/*End Invite Section*/
+/*********************************************************/
+/*Start Info Section*/
+section.info{
+width: 100%;
+    height: 500px;
+  padding-top: 10%;
+    padding-bottom: 10%;
+}
+section.info .info_desc{
+display: flex;
+    width: 100%;
+}
+section.info .info_desc .info_img{
+    width: 30%;
+    margin-left: 10%;
+}
+section.info .info_desc .info_information{
+    width: 70%;
+}
+section.info hr {
+    height: 2px;
+    border: 0;
+    background: #E8EAEA;
+    margin: 16px;
+}
+/*End Info Section*/
+/****************************************************************/
+/*Start Footer Section*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: beige;
+        text-align: center
+}
+footer .parent{
+display: flex;
+    justify-content: space-between;
+          padding-top: 5%;
+
+    padding-bottom: 3%;
+}
+footer .parent .right{
+padding-bottom: 10px;
+
+}
+footer .right span {
+    color: #777
+}
+/*End Footer Section*/
+
+
+
+
+
+
+
+
+
+
+
+
